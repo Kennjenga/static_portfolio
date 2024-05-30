@@ -178,7 +178,7 @@ p {
   background: linear-gradient(180deg, var(--main-color) 0%, var(--secondary-color) 100%);
 }
 .extra_sectio h3, h4, p {
-  margin: 4px;
+  margin: 5px;
 }
 
 /* my journey section */
