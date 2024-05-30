@@ -1,116 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>kennjenga portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="main_view">
-      <!-- menu and nav page -->
-      <nav>
-        <img
-          src="https://kennjenga.github.io/pics/pictures/pexels-flo-dahm-699459.jpg"
-        />
-        <input type="checkbox" id="sidebar-active" />
-        <label for="sidebar-active" class="open-sidebar">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="32px"
-            viewBox="0 -960 960 960"
-            width="32px"
-            fill="#5f6368"
-          >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>kennjenga portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main_view">
+    <!-- menu and nav page -->
+    <nav>
+      <img src="https://kennjenga.github.io/pics/pictures/pexels-flo-dahm-699459.jpg" />
+      <input type="checkbox" id="sidebar-active" />
+      <label for="sidebar-active" class="open-sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+      </label>
+      <label id="overlay" for="sidebar-active"></label>
+      <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
             <path
-              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-            />
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
           </svg>
         </label>
-        <label id="overlay" for="sidebar-active"></label>
-        <div class="links-container">
-          <label for="sidebar-active" class="close-sidebar">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="32px"
-              viewBox="0 -960 960 960"
-              width="32px"
-              fill="#5f6368"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </label>
 
-          <a href="home.html" class="home-link">Home</a>
-          <div class="linkz">
-            <a href="about.html">About me</a>
-            <a href="project.html">projects</a>
-            <a href="contact.html">Contact</a>
-          </div>
+        <a href="index.html" class="home-link">Home</a>
+        <div class="linkz">
+          <a href="about.html">About me</a>
+          <a href="project.html">projects</a>
+          <a href="contact.html">Contact</a>
         </div>
-      </nav>
-      <!-- footer section -->
+      </div>
+    </nav>
+    <div class="project_struct">
+      <div class="projects">
+        <a href="https://github.com/Kennjenga/Scrimbareact/tree/main/meme" target="_blank">
+          <div class="card">
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+              <h3>Meme Generator</h3>
+              <img src="https://kennjenga.github.io/pics/pictures/meme.png" alt="Image of meme generator">
+              <p>This a project that displays various memes when a meme generator is clicked.
+                It is React js project that fetches data fromJSON file and displays the memes
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="https://carental-eta.vercel.app/" target="_blank">
+          <div class="card">
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+              <h3>Carental</h3>
+              <img src="https://kennjenga.github.io/pics/pictures/carental.png" alt="An Image of Carental landing page">
+              <p>It is a next js project that displays a collection of cars</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/Kennjenga/TkinterCSV-man" target="_blank">
+          <div class="card">
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+              <h3>CSR automation</h3>
+              <img src="https://kennjenga.github.io/pics/pictures/csr.png" alt="Landing page of CSR automation">
+              <p>A project that utilizes tkinter and CSV reader to convert data to a desired format.</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://kennjenga.github.io/tutor-website/" target="_blank">
+          <div class="card">
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+              <h3>Tutor Website</h3>
+              <img src="https://kennjenga.github.io/pics/pictures/tutor.png" alt="Tutor website Landing page">
+              <p>A website that displays a collection of services offered by a learning center. first website created
+                using html and css only</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://kennjenga.github.io/XBr-website/" target="_blank">
+          <div class="card">
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+              <h3> XBR website</h3>
+              <img src="https://kennjenga.github.io/pics/pictures/xbr.png" alt="Landing page">
+              <p>It is a website that displays clothes in an online store<br>
+                It is a static website that uses bootstrap css
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/Kennjenga/notes_app" target="_blank">
+          <div class="card">
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+              <h3>Notes app</h3>
+              <img src="https://kennjenga.github.io/pics/pictures/notes.png" alt="Landing page">
+              <p>An Easy Way to Manage Your Notes <br>
+                It is react site that allows user to enter notes and save to a localhost
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- footer section -->
     <footer>
-        <div class="myfooter">
-          <div class="copy_right">
-            <h3>Kennjengadev</h3>
-            <h4> &copy 2024</h4>
-          </div>
-          <div class="site_imgs">
-            <a href="#">
-              <span class="site_img">
-                <img src="https://kennjenga.github.io/pics/site/whatsapp.png" />
-                <p>whatsapp (+254)7 28593820</p>
-              </span>
-            </a>
-            <a href="#">
-              <span class="site_img">
-                <img src="https://kennjenga.github.io/pics/site/phone.png" />
-                <p>phone (+254)7 28593820</p>
-              </span>
-            </a>
-            <a href="https://www.linkedin.com/in/kenneth-kinyagia-355693254/">
-              <span class="site_img">
-                <img src="https://kennjenga.github.io/pics/site/linkedin.png" />
-                <p>LinkedIn</p>
-              </span>
-            </a>
-            <a href="#">
-              <span class="site_img">
-                <img src="https://kennjenga.github.io/pics/site/twitter2.png" />
-                <p>X</p>
-              </span>
-            </a>
-            <a href="#">
-              <span class="site_img">
-                <img src="https://kennjenga.github.io/pics/site/github1.png" />
-                <p>Github</p>
-              </span>
-            </a>
-          </div>
-          <div class="resume">
-            <a href="mailto: kinyagia10@gmail.com">
-              <span class="resume_img">
-                <img src="https://kennjenga.github.io/pics/site/email.png" />
-                <p>Gmail</p>
-              </span>
-            </a>
-            <a href="">
-              <span class="resume_img">
-                <img src="https://kennjenga.github.io/pics/site/download-pdf.png" />
-                <p>CV</p>
-              </span>
-            </a>
+      <div class="myfooter">
+        <div class="copy_right">
+          <h2> Let's Connect</h2>
+          <h3>Kennjengadev</h3>
+          <h4> &copy 2024</h4>
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0WqnZe?utm_source=generator" width="350"
+            height="90" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
-      </footer>
-      <marquee>Kennjengadev project portfolio. Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart</marquee>
-    </body>
-  </html>
+        <div class="site_imgs">
+
+          <span class="site_img">
+            <img src="https://kennjenga.github.io/pics/site/whatsapp.png" />
+            <p>whatsapp (+254)7 28593820</p>
+          </span>
+
+
+          <span class="site_img">
+            <img src="https://kennjenga.github.io/pics/site/phone.png" />
+            <p>phone (+254)7 28593820</p>
+          </span>
+
+          <a href="https://www.linkedin.com/in/kenneth-kinyagia-355693254/">
+            <span class="site_img">
+              <img src="https://kennjenga.github.io/pics/site/linkedin.png" />
+              <p>LinkedIn</p>
+            </span>
+          </a>
+          <a href="https://x.com/kinyagia17" target="_blank">
+            <span class="site_img">
+              <img src="https://kennjenga.github.io/pics/site/twitter2.png" />
+              <p>X</p>
+            </span>
+          </a>
+          <a href="https://github.com/Kennjenga/" target="_blank">
+            <span class="site_img">
+              <img src="https://kennjenga.github.io/pics/site/github1.png" />
+              <p>Github</p>
+            </span>
+          </a>
+        </div>
+        <div class="resume">
+          <a href="mailto: kinyagia10@gmail.com">
+            <span class="resume_img">
+              <img src="https://kennjenga.github.io/pics/site/email.png" />
+              <p>Gmail</p>
+            </span>
+          </a>
+          <a href="./Kenneth Kinyagia Njenga resume.pdf" target="_blank">
+            <span class="resume_img">
+              <img src="https://kennjenga.github.io/pics/site/download-pdf.png" />
+              <p>CV</p>
+            </span>
+          </a>
+        </div>
+    </footer>
+    <marquee>Kennjengadev project portfolio. Don’t be pushed around by the fears in your mind. Be led by the dreams in
+      your heart</marquee>
+</body>
+
+</html>
