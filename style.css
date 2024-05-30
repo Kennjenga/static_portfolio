@@ -138,6 +138,7 @@ p {
 }
 
 .main_img {
+  margin: 10px;
   border-radius: 10%;
   transition: 0.5s ease-in-out;
 }
@@ -623,7 +624,7 @@ button[type="submit"]:hover {
 
 @media (max-width:880px) {
   .myfooter .copy_right {
-    width: 100%;
+    width: 95%;
   }
 
 }
