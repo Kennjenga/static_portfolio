@@ -113,7 +113,25 @@ main {
   padding: 10px;
   /* outline: 2px solid var(--primary-color); */
 }
+.my_main a{
+  width: 100%;
+}
+.pulse {
+  background-color: var(--hover-color);
+  animation: pulse 1s infinite ease-in-out;
+}
 
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .main_intro {
   height: fit-content;
   width: 55%;
@@ -262,15 +280,13 @@ footer img {
 }
 
 .copy_right {
-  /* outline: 2px solid black; */
   width: clamp(400px, 40%, 450px);
   margin: 10px;
   padding: 15px 10px;
-  margin-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
 }
 .copy_right iframe{
