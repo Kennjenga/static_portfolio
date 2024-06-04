@@ -299,6 +299,7 @@ footer img {
 }
 .copy_right iframe{
   max-width: 100%;
+  min-width: 300px;
   max-height: auto;
   margin: 10px 0;
 }
