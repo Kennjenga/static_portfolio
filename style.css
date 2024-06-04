@@ -78,9 +78,12 @@ nav a {
   align-items: center;
 }
 
-nav a:active:hover {
+nav a:hover{
   background-color: var(--hover-color);
   color: white;
+}
+nav a:focus{
+  background-color: var(--hover-color);
 }
 
 nav .home-link {
