@@ -1,4 +1,5 @@
 * {
+  max-width: 1500px;
   margin: 0;
   padding: 0;
   font-size: 0.95rem;
@@ -257,7 +258,7 @@ p {
 
 /* footer section */
 footer {
-  padding: 20px 20px 20px 0;
+  padding: 20px 10px;
   color: var(--text-color);
   height: auto;
   background-color: var(--secondary-color);
@@ -270,18 +271,22 @@ footer img {
 }
 
 .myfooter {
+  width: 90%;
   display: flex;
+  margin: 10px;
+  padding: 10px;
   flex-direction: row;
   gap: 15px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding: 15px;
 }
 
 .copy_right {
   width: clamp(400px, 40%, 450px);
-  margin: 10px 10px 10px 0;
-  padding: 15px 10px;
+  margin: 10px;
+  padding: 15px 10px 15px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,6 +304,7 @@ footer img {
   flex-direction: column;
   min-width: fit-content;
   margin: 10px;
+  width: 30%;
 }
 
 .site_img {
@@ -321,6 +327,8 @@ footer a {
 }
 
 .resume {
+  margin: 10px;
+  width: 20%;
   min-width: fit-content;
   height: fit-content;
   display: flex;
@@ -359,7 +367,7 @@ marquee {
   width: 50%;
   padding: 20px;
   border-radius: 5px;
-  background: linear-gradient(180deg, var(--main-color) 0%, var(--secondary-color) 100%);
+  background: white;
   ;
 }
 
