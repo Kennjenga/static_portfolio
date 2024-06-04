@@ -41,8 +41,8 @@ nav {
 }
 
 nav img {
-  height: 32px;
-  width: 32px;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 20px 0 10px;
@@ -78,7 +78,7 @@ nav a {
   align-items: center;
 }
 
-nav a:hover {
+nav a:active:hover {
   background-color: var(--hover-color);
   color: white;
 }
@@ -258,6 +258,7 @@ p {
 
 /* footer section */
 footer {
+  border-top: 0.4px solid var(--main-color);
   padding: 20px 10px;
   color: var(--text-color);
   height: auto;
@@ -530,6 +531,9 @@ button[type="submit"]:hover {
   object-fit: cover; 
   border-radius: 10%;
   margin: 10px 0;
+}
+.card-inner p{
+  font-weight: bold;
 }
 
 /* Responsive Design */
